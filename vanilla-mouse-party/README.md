@@ -261,7 +261,7 @@ function draw() {
     ball.addEventListener('animationend', function(e) {
       e.target.remove();
     });
-
+    console.log(mousePosition.y - ballSize, mousePosition.y)
     container.appendChild(ball);
   }, 50);
 }
